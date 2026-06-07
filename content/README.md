@@ -1,22 +1,22 @@
 # cv-ciscojmg — workspace
 
-Bienvenido a mi currículum presentado como un IDE.
+Bienvenido al currículum de **Francisco Javier Mujica García**, presentado como un IDE de solo lectura.
 
-Este workspace es **solo lectura**: puedes explorar archivos, usar la terminal y la paleta de comandos, pero no editar el contenido.
+Explora el árbol de archivos, usa la terminal (`help`) o abre rápido con `Ctrl+P` / `Cmd+P`.
 
-## Cómo navegar
+## Estructura del workspace
 
-- **Explorador** (barra lateral): abre carpetas y archivos `.md`
-- **Terminal**: escribe `help` para ver comandos (`ls`, `cat`, `open`, `theme`, …)
-- **Paleta de comandos**: `Ctrl+Shift+P` (Mac: `Cmd+Shift+P`)
-- **Abrir rápido**: `Ctrl+P`
+| Ruta | Contenido |
+|------|-----------|
+| `about/profile.md` | Perfil, contacto e información personal |
+| `about/education.md` | Estudios realizados |
+| `skills/index.md` | Habilidades técnicas |
+| `skills/software.md` | Software y lenguajes |
+| `experience/` | Experiencia laboral |
+| `projects/` | Aplicaciones desarrolladas |
 
-## Estructura
+## Atajos útiles
 
-| Ruta | Descripción |
-|------|-------------|
-| `about/profile.md` | Perfil y presentación |
-| `skills/index.md` | Habilidades |
-| `experience/` | Experiencia laboral (añade tus `.md` aquí) |
-
-<!-- TODO: personaliza este índice con tus enlaces -->
+- **Paleta de comandos:** `Ctrl+Shift+P` (Mac: `Cmd+Shift+P`)
+- **Terminal:** `Ctrl+J` / `Cmd+J`
+- **Cambiar tema:** clic en la barra de estado
