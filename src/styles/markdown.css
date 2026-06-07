@@ -136,12 +136,190 @@
 }
 
 .markdown-preview img {
-  max-width: 100%;
+  max-width: min(100%, 360px);
   height: auto;
   border-radius: 8px;
-  margin: 1em 0;
+  margin: 1.5em auto;
   border: 1px solid var(--border);
   display: block;
+}
+
+/* Perfil tipo CV — foto arriba a la derecha */
+.markdown-preview .cv-profile {
+  display: flow-root;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.markdown-preview .cv-profile__aside {
+  float: right;
+  width: 132px;
+  margin: 0 0 1rem 1.5rem;
+}
+
+.markdown-preview .cv-photo-wrap {
+  margin: 0;
+  text-align: center;
+}
+
+.markdown-preview .cv-photo {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  display: block;
+  background: transparent;
+}
+
+.markdown-preview .cv-photo-caption {
+  margin-top: 0.35rem;
+  font-size: 11px;
+  color: var(--text-muted);
+  letter-spacing: 0.04em;
+}
+
+.markdown-preview .cv-profile__main {
+  min-width: 0;
+}
+
+.markdown-preview .cv-eyebrow {
+  margin: 0 0 0.35rem;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.markdown-preview .cv-name {
+  margin: 0 0 0.4rem;
+  font-size: 2em;
+  border-bottom: none;
+  padding-bottom: 0;
+  line-height: 1.15;
+}
+
+.markdown-preview .cv-headline {
+  margin: 0 0 0.5rem;
+  font-size: 1.05em;
+  color: var(--text-secondary);
+}
+
+.markdown-preview .cv-tagline {
+  margin: 0;
+  font-size: 0.9em;
+  color: var(--text-muted);
+}
+
+.markdown-preview .cv-section {
+  margin-bottom: 1.75rem;
+}
+
+.markdown-preview .cv-section h2 {
+  margin-top: 0;
+  font-size: 1.25em;
+}
+
+.markdown-preview .cv-card {
+  padding: 1rem 1.15rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  line-height: 1.65;
+}
+
+.markdown-preview .cv-card p:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-preview .cv-card--muted {
+  border-style: dashed;
+  color: var(--text-secondary);
+}
+
+.markdown-preview .cv-card ul {
+  margin: 0.5em 0 0;
+  padding-left: 1.25em;
+}
+
+.markdown-preview .cv-contact-grid {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.markdown-preview .cv-contact-item {
+  padding: 0.75rem 1rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin: 0;
+}
+
+.markdown-preview .cv-contact-label {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: 0.35rem;
+}
+
+.markdown-preview .cv-contact-item a {
+  word-break: break-all;
+}
+
+.markdown-preview .cv-contact-item code {
+  background: var(--bg-tertiary);
+}
+
+.markdown-preview .cv-muted {
+  color: var(--text-muted);
+  font-size: 0.9em;
+}
+
+.markdown-preview .cv-pills {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.markdown-preview .cv-pills li {
+  margin: 0;
+  padding: 0.35rem 0.75rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  font-size: 0.9em;
+}
+
+.markdown-preview .cv-pills li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-preview .cv-pills li a:hover {
+  color: var(--accent);
+}
+
+@media (max-width: 520px) {
+  .markdown-preview .cv-profile__aside {
+    float: none;
+    width: 112px;
+    margin: 0 auto 1rem;
+  }
+
+  .markdown-preview .cv-profile__main {
+    text-align: center;
+  }
 }
 
 .markdown-preview blockquote {
