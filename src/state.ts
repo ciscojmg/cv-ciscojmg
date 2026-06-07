@@ -63,6 +63,7 @@ let state: AppState = {
     'content/about',
     'content/skills',
     'content/experience',
+    'content/projects',
   ]),
   commandPaletteOpen: false,
   quickOpenOpen: false,
