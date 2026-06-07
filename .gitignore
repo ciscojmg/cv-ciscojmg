@@ -3,3 +3,9 @@ dist
 .DS_Store
 *.local
 .env*.local
+
+# Prompts locales para generar imágenes con IA (no publicar)
+prompts-ia/
+
+# Borrador fuente del CV (no publicar)
+RESUMEN CURRICULAR*.txt
