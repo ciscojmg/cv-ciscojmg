@@ -310,6 +310,143 @@
   color: var(--accent);
 }
 
+.markdown-preview .cv-proof-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+.markdown-preview .cv-proof-grid figure {
+  margin: 0;
+}
+
+.markdown-preview .cv-proof-link {
+  display: block;
+  cursor: zoom-in;
+  line-height: 0;
+}
+
+.markdown-preview .cv-proof-link:hover img {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent);
+}
+
+.markdown-preview .cv-proof-grid img {
+  max-width: 100%;
+  width: 100%;
+  margin: 0 0 0.5rem;
+}
+
+.markdown-preview .cv-proof-caption {
+  margin: 0;
+  font-size: 0.85em;
+  color: var(--text-muted);
+  text-align: center;
+  line-height: 1.4;
+}
+
+.markdown-preview .cv-proof-hint {
+  color: var(--accent);
+  font-size: 0.95em;
+}
+
+/* README — pantalla de bienvenida tipo Cursor */
+.markdown-preview .cv-readme-welcome {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 55vh;
+  padding: 3rem 1rem 4rem;
+  margin: -1rem -1.5rem 0;
+}
+
+.markdown-preview .cv-readme-welcome__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 420px;
+}
+
+.markdown-preview .cv-readme-welcome__logo {
+  color: var(--accent);
+  margin-bottom: 1.25rem;
+  opacity: 0.85;
+}
+
+.markdown-preview .cv-readme-welcome__title {
+  margin: 0 0 2rem;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--text-primary);
+}
+
+.markdown-preview .cv-readme-welcome__subtitle {
+  margin: 0 0 2rem;
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--text-muted);
+}
+
+.markdown-preview .cv-readme-shortcuts {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.markdown-preview .cv-readme-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 10px 12px;
+  border-radius: 6px;
+  color: var(--text-secondary);
+}
+
+.markdown-preview .cv-readme-row--muted {
+  color: var(--text-muted);
+}
+
+.markdown-preview .cv-readme-row__label {
+  font-size: 14px;
+}
+
+.markdown-preview .cv-readme-row__keys {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.markdown-preview .cv-readme-kbd {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 22px;
+  height: 22px;
+  padding: 0 6px;
+  font-size: 11px;
+  font-family: inherit;
+  color: var(--text-secondary);
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border);
+  border-bottom-width: 2px;
+  border-radius: 4px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+}
+
+.markdown-preview .cv-readme-welcome__hint {
+  margin: 1.5rem 0 0;
+  font-size: 12px;
+  color: var(--text-muted);
+  text-align: center;
+}
+
 @media (max-width: 520px) {
   .markdown-preview .cv-profile__aside {
     float: none;

@@ -27,16 +27,17 @@ export function renderMarkdown(html: string, markdownPath: string): string {
   const raw = marked.parse(html, { renderer, async: false }) as string;
 
   const sanitized = DOMPurify.sanitize(raw, {
-    ADD_ATTR: ['target', 'rel', 'class', 'loading'],
+    ADD_ATTR: ['target', 'rel', 'class', 'loading', 'viewBox', 'fill', 'stroke', 'stroke-width', 'opacity', 'xmlns', 'width', 'height', 'd'],
     ALLOWED_TAGS: [
       'h1', 'h2', 'h3', 'h4', 'h5', 'h6',
       'p', 'br', 'hr',
       'ul', 'ol', 'li',
-      'strong', 'em', 'del', 'code', 'pre', 'blockquote',
+      'strong', 'em', 'del', 'code', 'pre', 'blockquote', 'kbd',
       'a', 'img',
       'table', 'thead', 'tbody', 'tr', 'th', 'td',
       'span', 'div', 'section', 'header', 'aside', 'article',
       'figure', 'figcaption',
+      'svg', 'path',
     ],
   });
 
@@ -45,7 +46,9 @@ export function renderMarkdown(html: string, markdownPath: string): string {
 
 function fixPublicAssetUrls(html: string): string {
   const base = import.meta.env.BASE_URL;
-  return html.replace(/src="\/([^"]+)"/g, `src="${base}$1"`);
+  return html
+    .replace(/src="\/([^"]+)"/g, `src="${base}$1"`)
+    .replace(/href="\/([^"]+)"/g, `href="${base}$1"`);
 }
 
 function escapeAttr(value: string): string {
