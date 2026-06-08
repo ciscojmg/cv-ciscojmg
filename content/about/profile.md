@@ -10,8 +10,8 @@
 <div class="cv-profile__main">
   <p class="cv-eyebrow">Currículum · Perfil</p>
   <h1 class="cv-name">Francisco Javier Mujica García</h1>
-  <p class="cv-headline">🔧 Ingeniero Mecatrónico · 📍 Guayaquil, Ecuador</p>
-  <p class="cv-tagline">Electrónica · GPS · Desarrollo web · Automatización</p>
+  <p class="cv-headline">Ingeniero Mecatrónico</p>
+  <p class="cv-tagline">📍 Guayaquil, Ecuador · Electrónica · GPS · Desarrollo web · Automatización</p>
 </div>
 
 </header>
@@ -37,7 +37,7 @@
     </li>
     <li class="cv-contact-item">
       <span class="cv-contact-label">📍 Ubicación</span>
-      <span>Kennedy Norte, Guayaquil, Ecuador</span>
+      <span>Guayaquil, Ecuador</span>
     </li>
     <li class="cv-contact-item">
       <span class="cv-contact-label">🎂 Nacimiento</span>
@@ -58,18 +58,12 @@
       <a href="tel:+593960140400">+593 96 014 0400</a>
     </li>
     <li class="cv-contact-item">
-      <span class="cv-contact-label">💼 LinkedIn</span>
-      <a href="https://ve.linkedin.com/in/francisco-javier-mujica-garcia-0443b811b" target="_blank" rel="noopener noreferrer">Francisco Javier Mujica García</a>
+      <span class="cv-contact-label">🦊 GitLab</span>
+      <a href="https://gitlab.com/ciscojmg-dev" target="_blank" rel="noopener noreferrer">ciscojmg-dev</a>
     </li>
-  </ul>
-</section>
-
-<section class="cv-section">
-  <h2>🗂️ Explorar</h2>
-  <ul class="cv-pills">
-    <li>📚 <a href="../about/education.md">Educación</a></li>
-    <li>🛠️ <a href="../skills/index.md">Habilidades</a></li>
-    <li>💼 <a href="../experience/README.md">Experiencia</a></li>
-    <li>🚀 <a href="../projects/README.md">Proyectos</a></li>
+    <li class="cv-contact-item">
+      <span class="cv-contact-label">🐙 GitHub</span>
+      <a href="https://github.com/ciscojmg" target="_blank" rel="noopener noreferrer">ciscojmg</a>
+    </li>
   </ul>
 </section>
