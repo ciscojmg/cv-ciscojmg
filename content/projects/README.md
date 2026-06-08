@@ -13,7 +13,7 @@
   <h2>📂 Aplicaciones</h2>
   <div class="cv-card">
     <ul>
-      <li><a href="./editorial-primavera-sgm.md">Sistema de gestión de mantenimiento (SGM) — Editorial Primavera</a> — Tesis universitaria</li>
+      <li><a href="./editorial-primavera-sgm.md">Sistema de gestión de mantenimiento (SGM) — Editorial Primavera</a> — Tesis de grado · Ingeniero Mecatrónico</li>
     </ul>
   </div>
 </section>
