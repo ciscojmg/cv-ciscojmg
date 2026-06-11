@@ -13,8 +13,8 @@ import { createStatusBar } from './components/StatusBar';
 import { createCommandPalette } from './components/CommandPalette';
 import { registerCommands } from './lib/commands';
 import { initKeyboard } from './lib/keyboard';
-import { resolveFilePath, getFileTree } from './lib/fileIndex';
-import { initState, openFile } from './state';
+import { applyRoute, initRouter } from './lib/router';
+import { initState } from './state';
 
 export function mountApp(root: HTMLElement): void {
   initState();
@@ -67,26 +67,6 @@ export function mountApp(root: HTMLElement): void {
   document.body.appendChild(palette);
 
   initKeyboard();
-
-  const readme = resolveFilePath('README.md');
-  if (readme) {
-    openFile(readme, 'README.md');
-  } else {
-    const tree = getFileTree();
-    const first = findFirstFile(tree);
-    if (first) openFile(first.path, first.name);
-  }
-}
-
-function findFirstFile(
-  nodes: ReturnType<typeof getFileTree>,
-): { path: string; name: string } | null {
-  for (const n of nodes) {
-    if (n.type === 'file') return { path: n.path, name: n.name };
-    if (n.children) {
-      const found = findFirstFile(n.children);
-      if (found) return found;
-    }
-  }
-  return null;
+  initRouter();
+  applyRoute();
 }
