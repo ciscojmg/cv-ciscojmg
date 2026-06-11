@@ -1,12 +1,5 @@
 <header class="cv-profile">
 
-<aside class="cv-profile__aside">
-  <figure class="cv-photo-wrap">
-    <img src="/assets/mascot/mascot-cv.png" alt="Francisco Javier Mujica García — OctoCV" class="cv-photo" />
-    <figcaption class="cv-photo-caption">OctoCV</figcaption>
-  </figure>
-</aside>
-
 <div class="cv-profile__main">
   <p class="cv-eyebrow">Currículum · Perfil</p>
   <h1 class="cv-name">Francisco Javier Mujica García</h1>

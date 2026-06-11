@@ -1,5 +1,12 @@
 <header class="cv-profile">
 
+<aside class="cv-profile__aside">
+  <figure class="cv-photo-wrap">
+    <img src="/assets/mascot/mascot-thesis.png" alt="Tesis SGM — OctoCV" class="cv-photo" />
+    <figcaption class="cv-photo-caption">OctoCV</figcaption>
+  </figure>
+</aside>
+
 <div class="cv-profile__main">
   <p class="cv-eyebrow">Tesis universitaria</p>
   <h1 class="cv-name">Sistema de gestión de mantenimiento (SGM)</h1>

@@ -1,5 +1,12 @@
 <header class="cv-profile">
 
+<aside class="cv-profile__aside">
+  <figure class="cv-photo-wrap">
+    <img src="/assets/mascot/mascot-education.png" alt="Educación — OctoCV" class="cv-photo" />
+    <figcaption class="cv-photo-caption">OctoCV</figcaption>
+  </figure>
+</aside>
+
 <div class="cv-profile__main">
   <p class="cv-eyebrow">Formación académica</p>
   <h1 class="cv-name">📚 Educación</h1>

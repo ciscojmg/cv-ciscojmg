@@ -1,5 +1,12 @@
 <header class="cv-profile">
 
+<aside class="cv-profile__aside">
+  <figure class="cv-photo-wrap">
+    <img src="/assets/mascot/mascot-skills.png" alt="Habilidades — OctoCV" class="cv-photo" />
+    <figcaption class="cv-photo-caption">OctoCV</figcaption>
+  </figure>
+</aside>
+
 <div class="cv-profile__main">
   <p class="cv-eyebrow">Competencias técnicas</p>
   <h1 class="cv-name">🛠️ Habilidades</h1>
