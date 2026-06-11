@@ -88,7 +88,7 @@ El workflow [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) usa e
 
 **Settings → Pages → Build and deployment → Source: GitHub Actions**
 
-Cada push a `main` despliega automáticamente.
+Cada push a `main` despliega automáticamente el build de `dist/` (no uses «Deploy from a branch»).
 
 ### Build manual
 
