@@ -117,7 +117,21 @@ export function createEditor(
 
     welcomeEl.style.display = 'none';
     toolbar.style.display = 'flex';
-    const md = getFileContent(activeTabPath) ?? '';
+    const md = getFileContent(activeTabPath);
+
+    if (md === undefined) {
+      const base = import.meta.env.BASE_URL;
+      previewEl.innerHTML = `
+        <div class="editor-not-found">
+          <img src="${base}assets/mascot/mascot-404.png" alt="Archivo no encontrado — OctoCV" class="editor-not-found__img" />
+          <p class="editor-not-found__title">Archivo no encontrado</p>
+          <p class="editor-not-found__path">${activeTabPath}</p>
+        </div>`;
+      previewWrap.style.display = 'block';
+      editorEl.style.display = 'none';
+      return;
+    }
+
     previewEl.innerHTML = renderMarkdown(md, activeTabPath);
 
     previewWrap.style.display = editorViewMode === 'preview' ? 'block' : 'none';
