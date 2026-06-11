@@ -370,9 +370,18 @@
 }
 
 .markdown-preview .cv-readme-welcome__logo {
-  color: var(--accent);
-  margin-bottom: 1.25rem;
-  opacity: 0.85;
+  margin-bottom: 2rem;
+}
+
+.markdown-preview .cv-readme-mascot {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0;
+  display: block;
 }
 
 .markdown-preview .cv-readme-welcome__title {
