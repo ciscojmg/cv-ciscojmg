@@ -48,10 +48,6 @@
       <a href="mailto:franciscomujica.01@gmail.com"><code>franciscomujica.01@gmail.com</code></a>
     </li>
     <li class="cv-contact-item">
-      <span class="cv-contact-label">📱 Teléfono</span>
-      <a href="tel:+593960140400">+593 96 014 0400</a>
-    </li>
-    <li class="cv-contact-item">
       <span class="cv-contact-label">🦊 GitLab</span>
       <a href="https://gitlab.com/ciscojmg-dev" target="_blank" rel="noopener noreferrer">ciscojmg-dev</a>
     </li>
