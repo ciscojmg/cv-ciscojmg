@@ -351,6 +351,33 @@
   font-size: 0.95em;
 }
 
+.markdown-preview .cv-logo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0.25rem 0;
+}
+
+.markdown-preview .cv-logo-grid figure {
+  margin: 0;
+  text-align: center;
+}
+
+.markdown-preview .cv-logo-grid img {
+  max-height: 72px;
+  width: auto;
+  max-width: 200px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 0.5rem;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
 /* README — pantalla de bienvenida tipo Cursor */
 .markdown-preview .cv-readme-welcome {
   display: flex;

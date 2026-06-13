@@ -4,7 +4,7 @@
   <p class="cv-eyebrow">Currículum · Perfil</p>
   <h1 class="cv-name">Francisco Javier Mujica García</h1>
   <p class="cv-headline">Ingeniero Mecatrónico</p>
-  <p class="cv-tagline">📍 Guayaquil, Ecuador · Electrónica · GPS · Desarrollo web · Automatización</p>
+  <p class="cv-tagline">📍 Guayaquil, Ecuador · Acuicultura · IoT · Electrónica embebida · Desarrollo web</p>
 </div>
 
 </header>
@@ -12,8 +12,9 @@
 <section class="cv-section">
   <h2>📝 Resumen</h2>
   <div class="cv-card">
-    <p>Ingeniero Mecatrónico con experiencia en <strong>electrónica</strong>, instalación y programación de equipos <strong>GPS</strong>, monitoreo de flotas y desarrollo de <strong>aplicaciones y sitios web</strong>. He participado en proyectos de bases de datos, sistemas de gestión de mantenimiento multiplataforma y soluciones con stack web clásico (HTML, CSS, JavaScript, PHP, SQL).</p>
-    <p>Actualmente en proceso de actualizar este workspace con proyectos recientes en GitHub, GitLab y actividades de mi rol actual.</p>
+    <p>Llevo desde 2017 en <strong><a href="/experience/biofeeder-aquasonic">Biofeeder - Aquasonic</a></strong> (<a href="https://www.aquasonic.io/" target="_blank" rel="noopener noreferrer">aquasonic.io</a>), donde diseño y desarrollo alimentadores inteligentes para acuicultura: hardware y programación en <strong>C</strong>, con más de 8000 equipos en operación en camaroneras.</p>
+    <p>En las plataformas <strong>Biomatic</strong> y <strong>Aquasonic</strong> desarrollo y mantengo el <strong>frontend</strong> y <strong>backend</strong>, conectando la gestión digital con los dispositivos instalados en camaroneras.</p>
+    <p>Además, realicé gran parte de la <strong>documentación de procesos</strong> y los <strong>estudios</strong> de los proyectos de <strong>hardware</strong> y <strong>software</strong> de la empresa.</p>
   </div>
 </section>
 
