@@ -36,8 +36,43 @@
   font-size: 13px;
   color: var(--text-muted);
   text-align: center;
-  margin-bottom: 32px;
+  margin-bottom: 20px;
   line-height: 1.5;
+}
+
+.welcome-download {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 28px;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #fff;
+  background: linear-gradient(135deg, var(--accent-dim) 0%, var(--status-bg) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow:
+    0 4px 16px rgba(0, 0, 0, 0.35),
+    0 0 24px color-mix(in srgb, var(--status-bg) 45%, transparent);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+}
+
+.welcome-download:hover {
+  color: #fff;
+  text-decoration: none;
+  filter: brightness(1.1);
+  transform: translateY(-2px);
+  box-shadow:
+    0 6px 20px rgba(0, 0, 0, 0.4),
+    0 0 32px color-mix(in srgb, var(--status-bg) 55%, transparent);
+}
+
+.welcome-download__icon {
+  flex-shrink: 0;
 }
 
 .welcome-shortcuts {

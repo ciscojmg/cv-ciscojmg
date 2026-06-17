@@ -411,6 +411,47 @@
   display: block;
 }
 
+.markdown-preview a.cv-readme-download {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 1.75rem;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #fff !important;
+  background: linear-gradient(135deg, var(--accent-dim) 0%, var(--status-bg) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 8px;
+  text-decoration: none !important;
+  box-shadow:
+    0 4px 16px rgba(0, 0, 0, 0.35),
+    0 0 24px color-mix(in srgb, var(--status-bg) 45%, transparent);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+}
+
+.markdown-preview a.cv-readme-download:hover {
+  color: #fff !important;
+  text-decoration: none !important;
+  filter: brightness(1.1);
+  transform: translateY(-2px);
+  box-shadow:
+    0 6px 20px rgba(0, 0, 0, 0.4),
+    0 0 32px color-mix(in srgb, var(--status-bg) 55%, transparent);
+}
+
+.markdown-preview a.cv-readme-download:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.markdown-preview .cv-readme-download__icon {
+  flex-shrink: 0;
+  opacity: 0.95;
+}
+
 .markdown-preview .cv-readme-welcome__title {
   margin: 0 0 2rem;
   font-size: 15px;

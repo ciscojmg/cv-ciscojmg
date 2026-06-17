@@ -1,5 +1,6 @@
 import { THEME_LABELS } from '../lib/theme';
 import { VIEW_LABELS } from './Editor';
+import { CV_AMERICANO_FILENAME, getCvAmericanoUrl } from '../lib/cvDownload';
 import {
   getState,
   subscribe,
@@ -15,6 +16,12 @@ export function createStatusBar(): HTMLElement {
     <div class="status-bar__left">
       <span class="status-bar__item" data-action="branch">main*</span>
       <span class="status-bar__item" data-action="readonly">Solo lectura</span>
+      <a
+        class="status-bar__item status-bar__item--action status-bar__link"
+        href="${getCvAmericanoUrl()}"
+        download="${CV_AMERICANO_FILENAME}"
+        title="Descargar CV en PDF (formato americano)"
+      >CV PDF</a>
     </div>
     <div class="status-bar__right">
       <span class="status-bar__item" data-action="file"></span>

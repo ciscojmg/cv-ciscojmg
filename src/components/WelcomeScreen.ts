@@ -1,4 +1,5 @@
 import { getWelcomeShortcuts, renderKeyChips } from '../lib/shortcuts';
+import { CV_AMERICANO_FILENAME, getCvAmericanoUrl } from '../lib/cvDownload';
 import { resolveFilePath } from '../lib/fileIndex';
 import {
   setQuickOpenOpen,
@@ -30,6 +31,8 @@ export function createWelcomeScreen(handlers: WelcomeHandlers): HTMLElement {
     )
     .join('');
 
+  const pdfUrl = getCvAmericanoUrl();
+
   el.innerHTML = `
     <div class="welcome-inner">
       <div class="welcome-logo" aria-hidden="true">
@@ -41,6 +44,17 @@ export function createWelcomeScreen(handlers: WelcomeHandlers): HTMLElement {
       </div>
       <p class="welcome-title">cv-ciscojmg</p>
       <p class="welcome-subtitle">Workspace de solo lectura · selecciona un archivo o usa un atajo</p>
+      <a
+        class="welcome-download"
+        href="${pdfUrl}"
+        download="${CV_AMERICANO_FILENAME}"
+        title="Descargar CV en PDF (formato americano, una página)"
+      >
+        <svg class="welcome-download__icon" viewBox="0 0 16 16" width="16" height="16" fill="none" aria-hidden="true">
+          <path d="M8 2v8M5 7l3 3 3-3M3 13h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Descargar CV (formato americano)
+      </a>
       <div class="welcome-shortcuts" role="list">${rows}</div>
     </div>
   `;

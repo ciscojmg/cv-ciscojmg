@@ -27,7 +27,7 @@ export function renderMarkdown(html: string, markdownPath: string): string {
   const raw = marked.parse(html, { renderer, async: false }) as string;
 
   const sanitized = DOMPurify.sanitize(raw, {
-    ADD_ATTR: ['target', 'rel', 'class', 'loading', 'viewBox', 'fill', 'stroke', 'stroke-width', 'opacity', 'xmlns', 'width', 'height', 'd'],
+    ADD_ATTR: ['target', 'rel', 'class', 'loading', 'download', 'viewBox', 'fill', 'stroke', 'stroke-width', 'opacity', 'xmlns', 'width', 'height', 'd', 'stroke-linecap', 'stroke-linejoin', 'aria-hidden'],
     ALLOWED_TAGS: [
       'h1', 'h2', 'h3', 'h4', 'h5', 'h6',
       'p', 'br', 'hr',

@@ -334,6 +334,15 @@
   opacity: 1;
 }
 
+.status-bar__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.status-bar__link:hover {
+  text-decoration: underline;
+}
+
 .overlay {
   position: fixed;
   inset: 0;
